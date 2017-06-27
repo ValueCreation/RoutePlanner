@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DataModelStoreContainer">
+    <EntitySet Name="Barriers" EntityType="DataModel.Store.Barriers" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ConfigSchemes" EntityType="DataModel.Store.ConfigSchemes" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="DriverDriverSpecialties" EntityType="DataModel.Store.DriverDriverSpecialties" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Drivers" EntityType="DataModel.Store.Drivers" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="DriverSpecialties" EntityType="DataModel.Store.DriverSpecialties" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FuelTypes" EntityType="DataModel.Store.FuelTypes" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Locations" EntityType="DataModel.Store.Locations" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="MobileDevices" EntityType="DataModel.Store.MobileDevices" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="OrderDriverSpecialties" EntityType="DataModel.Store.OrderDriverSpecialties" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Orders" EntityType="DataModel.Store.Orders" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="OrderVehicleSpecialties" EntityType="DataModel.Store.OrderVehicleSpecialties" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Project" EntityType="DataModel.Store.Project" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="RenewalLocations" EntityType="DataModel.Store.RenewalLocations" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Routes" EntityType="DataModel.Store.Routes" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="RouteZones" EntityType="DataModel.Store.RouteZones" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Schedules" EntityType="DataModel.Store.Schedules" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Stops" EntityType="DataModel.Store.Stops" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Vehicles" EntityType="DataModel.Store.Vehicles" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="VehicleSpecialties" EntityType="DataModel.Store.VehicleSpecialties" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="VehicleVehicleSpecialties" EntityType="DataModel.Store.VehicleVehicleSpecialties" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Zones" EntityType="DataModel.Store.Zones" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <AssociationSet Name="FK_DriverDriverSpecialties_Drivers" Association="DataModel.Store.FK_DriverDriverSpecialties_Drivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="DriverDriverSpecialties" EntitySet="DriverDriverSpecialties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DriverDriverSpecialties_DriverSpecialties" Association="DataModel.Store.FK_DriverDriverSpecialties_DriverSpecialties">
+      <End Role="DriverSpecialties" EntitySet="DriverSpecialties" />
+      <End Role="DriverDriverSpecialties" EntitySet="DriverDriverSpecialties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_MobileDevices" Association="DataModel.Store.FK_Drivers_MobileDevices">
+      <End Role="MobileDevices" EntitySet="MobileDevices" />
+      <End Role="Drivers" EntitySet="Drivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDriverSpecialties_DriverSpecialties" Association="DataModel.Store.FK_OrderDriverSpecialties_DriverSpecialties">
+      <End Role="DriverSpecialties" EntitySet="DriverSpecialties" />
+      <End Role="OrderDriverSpecialties" EntitySet="OrderDriverSpecialties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDriverSpecialties_Orders" Association="DataModel.Store.FK_OrderDriverSpecialties_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderDriverSpecialties" EntitySet="OrderDriverSpecialties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderVehicleSpecialties_Orders" Association="DataModel.Store.FK_OrderVehicleSpecialties_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderVehicleSpecialties" EntitySet="OrderVehicleSpecialties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderVehicleSpecialties_VehicleSpecialties" Association="DataModel.Store.FK_OrderVehicleSpecialties_VehicleSpecialties">
+      <End Role="VehicleSpecialties" EntitySet="VehicleSpecialties" />
+      <End Role="OrderVehicleSpecialties" EntitySet="OrderVehicleSpecialties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RenewalLocations_Locations" Association="DataModel.Store.FK_RenewalLocations_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="RenewalLocations" EntitySet="RenewalLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RenewalLocations_Routes" Association="DataModel.Store.FK_RenewalLocations_Routes">
+      <End Role="Routes" EntitySet="Routes" />
+      <End Role="RenewalLocations" EntitySet="RenewalLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Routes_Drivers" Association="DataModel.Store.FK_Routes_Drivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="Routes" EntitySet="Routes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Routes_EndLocations" Association="DataModel.Store.FK_Routes_EndLocations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Routes" EntitySet="Routes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Routes_Schedules" Association="DataModel.Store.FK_Routes_Schedules">
+      <End Role="Schedules" EntitySet="Schedules" />
+      <End Role="Routes" EntitySet="Routes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Routes_StartLocations" Association="DataModel.Store.FK_Routes_StartLocations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Routes" EntitySet="Routes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Routes_Vehicles" Association="DataModel.Store.FK_Routes_Vehicles">
+      <End Role="Vehicles" EntitySet="Vehicles" />
+      <End Role="Routes" EntitySet="Routes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RouteZones_Routes" Association="DataModel.Store.FK_RouteZones_Routes">
+      <End Role="Routes" EntitySet="Routes" />
+      <End Role="RouteZones" EntitySet="RouteZones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RouteZones_Zones" Association="DataModel.Store.FK_RouteZones_Zones">
+      <End Role="Zones" EntitySet="Zones" />
+      <End Role="RouteZones" EntitySet="RouteZones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stops_Locations" Association="DataModel.Store.FK_Stops_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Stops" EntitySet="Stops" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stops_Orders" Association="DataModel.Store.FK_Stops_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Stops" EntitySet="Stops" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stops_Routes" Association="DataModel.Store.FK_Stops_Routes">
+      <End Role="Routes" EntitySet="Routes" />
+      <End Role="Stops" EntitySet="Stops" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehicles_FuelTypes" Association="DataModel.Store.FK_Vehicles_FuelTypes">
+      <End Role="FuelTypes" EntitySet="FuelTypes" />
+      <End Role="Vehicles" EntitySet="Vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehicles_MobileDevices" Association="DataModel.Store.FK_Vehicles_MobileDevices">
+      <End Role="MobileDevices" EntitySet="MobileDevices" />
+      <End Role="Vehicles" EntitySet="Vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleVehicleSpecialties_Vehicles" Association="DataModel.Store.FK_VehicleVehicleSpecialties_Vehicles">
+      <End Role="Vehicles" EntitySet="Vehicles" />
+      <End Role="VehicleVehicleSpecialties" EntitySet="VehicleVehicleSpecialties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleVehicleSpecialties_VehicleSpecialties" Association="DataModel.Store.FK_VehicleVehicleSpecialties_VehicleSpecialties">
+      <End Role="VehicleSpecialties" EntitySet="VehicleSpecialties" />
+      <End Role="VehicleVehicleSpecialties" EntitySet="VehicleVehicleSpecialties" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Barriers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="FinishDate" Type="datetime" />
+    <Property Name="Geometry" Type="image" />
+    <Property Name="BarrierType" Type="nvarchar" MaxLength="256" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConfigSchemes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Value" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="DriverDriverSpecialties">
+    <Key>
+      <PropertyRef Name="DriverId" />
+      <PropertyRef Name="DriverSpecialtyId" />
+    </Key>
+    <Property Name="DriverId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DriverSpecialtyId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Drivers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="FixedSalary" Type="float" Nullable="false" />
+    <Property Name="PerHourSalary" Type="float" Nullable="false" />
+    <Property Name="PerHourOTSalary" Type="float" Nullable="false" />
+    <Property Name="TimeBeforeOT" Type="float" Nullable="false" />
+    <Property Name="MobileDeviceId" Type="uniqueidentifier" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DriverSpecialties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FuelTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="Co2Emission" Type="float" Nullable="false" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="OpenFrom" Type="bigint" />
+    <Property Name="OpenTo" Type="bigint" />
+    <Property Name="OpenFrom2" Type="bigint" />
+    <Property Name="OpenTo2" Type="bigint" />
+    <Property Name="FullAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddressLine" Type="nvarchar" MaxLength="100" />
+    <Property Name="Locality1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Locality2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Locality3" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountyPrefecture" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostalCode1" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostalCode2" Type="nvarchar" MaxLength="50" />
+    <Property Name="StateProvince" Type="nvarchar" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="X" Type="float" />
+    <Property Name="Y" Type="float" />
+    <Property Name="Locator" Type="nvarchar" MaxLength="100" />
+    <Property Name="CurbApproach" Type="int" Nullable="false" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MobileDevices">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActiveSyncProfileName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="SyncFolder" Type="nvarchar" MaxLength="260" />
+    <Property Name="SyncType" Type="int" Nullable="false" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderDriverSpecialties">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="DriverSpecialtyId" />
+    </Key>
+    <Property Name="OrderId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DriverSpecialtyId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="PlannedDate" Type="datetime" />
+    <Property Name="Locator" Type="nvarchar" MaxLength="100" />
+    <Property Name="FullAddress" Type="nvarchar" MaxLength="200" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddressLine" Type="nvarchar" MaxLength="50" />
+    <Property Name="Locality1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Locality2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Locality3" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountyPrefecture" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostalCode1" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostalCode2" Type="nvarchar" MaxLength="50" />
+    <Property Name="StateProvince" Type="nvarchar" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="X" Type="float" />
+    <Property Name="Y" Type="float" />
+    <Property Name="OrderType" Type="int" Nullable="false" />
+    <Property Name="OrderPriority" Type="int" Nullable="false" />
+    <Property Name="ServiceTime" Type="real" Nullable="false" />
+    <Property Name="CurbApproach" Type="int" Nullable="false" />
+    <Property Name="TW1From" Type="bigint" />
+    <Property Name="TW1To" Type="bigint" />
+    <Property Name="TW2From" Type="bigint" />
+    <Property Name="TW2To" Type="bigint" />
+    <Property Name="Capacities" Type="nvarchar" MaxLength="200" />
+    <Property Name="CustomProperties" Type="nvarchar" />
+    <Property Name="MaxViolationTime" Type="float" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderVehicleSpecialties">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="VehicleSpecialtyId" />
+    </Key>
+    <Property Name="OrderId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="VehicleSpecialtyId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Version" Type="float" />
+  </EntityType>
+  <EntityType Name="RenewalLocations">
+    <Key>
+      <PropertyRef Name="RouteId" />
+      <PropertyRef Name="LocationId" />
+    </Key>
+    <Property Name="RouteId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LocationId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Routes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="WorkFrom" Type="bigint" />
+    <Property Name="WorkTo" Type="bigint" />
+    <Property Name="Breaks" Type="nvarchar" MaxLength="2000" />
+    <Property Name="TimeAtStart" Type="float" Nullable="false" />
+    <Property Name="TimeAtEnd" Type="float" Nullable="false" />
+    <Property Name="TimeAtRenewal" Type="float" Nullable="false" />
+    <Property Name="MaxOrders" Type="bigint" Nullable="false" />
+    <Property Name="MaxTravelDistance" Type="float" Nullable="false" />
+    <Property Name="MaxTravelDuration" Type="float" Nullable="false" />
+    <Property Name="MaxTotalDuration" Type="float" Nullable="false" />
+    <Property Name="Color" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="Default" Type="bit" Nullable="false" />
+    <Property Name="Days" Type="nvarchar" MaxLength="500" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="Overtime" Type="float" Nullable="false" />
+    <Property Name="TotalTime" Type="float" Nullable="false" />
+    <Property Name="TotalDistance" Type="float" Nullable="false" />
+    <Property Name="TravelTime" Type="float" Nullable="false" />
+    <Property Name="ViolationTime" Type="float" Nullable="false" />
+    <Property Name="WaitTime" Type="float" Nullable="false" />
+    <Property Name="Capacities" Type="nvarchar" MaxLength="200" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="Visible" Type="bit" Nullable="false" />
+    <Property Name="HardZones" Type="bit" Nullable="false" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="VehiclesId" Type="uniqueidentifier" />
+    <Property Name="DriversId" Type="uniqueidentifier" />
+    <Property Name="StartLocationId" Type="uniqueidentifier" />
+    <Property Name="EndLocationId" Type="uniqueidentifier" />
+    <Property Name="DefaultRouteID" Type="uniqueidentifier" />
+    <Property Name="ScheduleId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="RouteZones">
+    <Key>
+      <PropertyRef Name="RouteId" />
+      <PropertyRef Name="ZoneId" />
+    </Key>
+    <Property Name="RouteId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ZoneId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Schedules">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="PlannedDate" Type="datetime" />
+    <Property Name="ScheduleType" Type="int" Nullable="false" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stops">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ArriveTime" Type="datetime" />
+    <Property Name="Directions" Type="image" />
+    <Property Name="PathTo" Type="image" />
+    <Property Name="Distance" Type="float" Nullable="false" />
+    <Property Name="SequenceNumber" Type="int" Nullable="false" />
+    <Property Name="OrderSequenceNumber" Type="int" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="TimeAtStop" Type="float" Nullable="false" />
+    <Property Name="TravelTime" Type="float" Nullable="false" />
+    <Property Name="WaitTime" Type="float" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="LocationId" Type="uniqueidentifier" />
+    <Property Name="OrderId" Type="uniqueidentifier" />
+    <Property Name="RouteId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Vehicles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="FixedSalary" Type="float" Nullable="false" />
+    <Property Name="FuelConsumption" Type="float" Nullable="false" />
+    <Property Name="Capacities" Type="nvarchar" MaxLength="200" />
+    <Property Name="MobileDeviceId" Type="uniqueidentifier" />
+    <Property Name="FuelTypeId" Type="uniqueidentifier" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleSpecialties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleVehicleSpecialties">
+    <Key>
+      <PropertyRef Name="VehicleId" />
+      <PropertyRef Name="VehicleSpecialtyId" />
+    </Key>
+    <Property Name="VehicleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="VehicleSpecialtyId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Zones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar" />
+    <Property Name="Geometry" Type="image" />
+    <Property Name="CreationTime" Type="bigint" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_DriverDriverSpecialties_Drivers">
+    <End Role="Drivers" Type="DataModel.Store.Drivers" Multiplicity="1" />
+    <End Role="DriverDriverSpecialties" Type="DataModel.Store.DriverDriverSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DriverDriverSpecialties">
+        <PropertyRef Name="DriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DriverDriverSpecialties_DriverSpecialties">
+    <End Role="DriverSpecialties" Type="DataModel.Store.DriverSpecialties" Multiplicity="1" />
+    <End Role="DriverDriverSpecialties" Type="DataModel.Store.DriverDriverSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DriverSpecialties">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DriverDriverSpecialties">
+        <PropertyRef Name="DriverSpecialtyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_MobileDevices">
+    <End Role="MobileDevices" Type="DataModel.Store.MobileDevices" Multiplicity="0..1" />
+    <End Role="Drivers" Type="DataModel.Store.Drivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MobileDevices">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Drivers">
+        <PropertyRef Name="MobileDeviceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDriverSpecialties_DriverSpecialties">
+    <End Role="DriverSpecialties" Type="DataModel.Store.DriverSpecialties" Multiplicity="1" />
+    <End Role="OrderDriverSpecialties" Type="DataModel.Store.OrderDriverSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DriverSpecialties">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDriverSpecialties">
+        <PropertyRef Name="DriverSpecialtyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDriverSpecialties_Orders">
+    <End Role="Orders" Type="DataModel.Store.Orders" Multiplicity="1" />
+    <End Role="OrderDriverSpecialties" Type="DataModel.Store.OrderDriverSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDriverSpecialties">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderVehicleSpecialties_Orders">
+    <End Role="Orders" Type="DataModel.Store.Orders" Multiplicity="1" />
+    <End Role="OrderVehicleSpecialties" Type="DataModel.Store.OrderVehicleSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderVehicleSpecialties">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderVehicleSpecialties_VehicleSpecialties">
+    <End Role="VehicleSpecialties" Type="DataModel.Store.VehicleSpecialties" Multiplicity="1" />
+    <End Role="OrderVehicleSpecialties" Type="DataModel.Store.OrderVehicleSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleSpecialties">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderVehicleSpecialties">
+        <PropertyRef Name="VehicleSpecialtyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RenewalLocations_Locations">
+    <End Role="Locations" Type="DataModel.Store.Locations" Multiplicity="1" />
+    <End Role="RenewalLocations" Type="DataModel.Store.RenewalLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RenewalLocations">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RenewalLocations_Routes">
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="1" />
+    <End Role="RenewalLocations" Type="DataModel.Store.RenewalLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Routes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RenewalLocations">
+        <PropertyRef Name="RouteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Routes_Drivers">
+    <End Role="Drivers" Type="DataModel.Store.Drivers" Multiplicity="0..1" />
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Routes">
+        <PropertyRef Name="DriversId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Routes_EndLocations">
+    <End Role="Locations" Type="DataModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Routes">
+        <PropertyRef Name="EndLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Routes_Schedules">
+    <End Role="Schedules" Type="DataModel.Store.Schedules" Multiplicity="0..1" />
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedules">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Routes">
+        <PropertyRef Name="ScheduleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Routes_StartLocations">
+    <End Role="Locations" Type="DataModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Routes">
+        <PropertyRef Name="StartLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Routes_Vehicles">
+    <End Role="Vehicles" Type="DataModel.Store.Vehicles" Multiplicity="0..1" />
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Routes">
+        <PropertyRef Name="VehiclesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RouteZones_Routes">
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="1" />
+    <End Role="RouteZones" Type="DataModel.Store.RouteZones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Routes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RouteZones">
+        <PropertyRef Name="RouteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RouteZones_Zones">
+    <End Role="Zones" Type="DataModel.Store.Zones" Multiplicity="1" />
+    <End Role="RouteZones" Type="DataModel.Store.RouteZones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zones">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RouteZones">
+        <PropertyRef Name="ZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stops_Locations">
+    <End Role="Locations" Type="DataModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Stops" Type="DataModel.Store.Stops" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stops">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stops_Orders">
+    <End Role="Orders" Type="DataModel.Store.Orders" Multiplicity="0..1" />
+    <End Role="Stops" Type="DataModel.Store.Stops" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stops">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stops_Routes">
+    <End Role="Routes" Type="DataModel.Store.Routes" Multiplicity="0..1" />
+    <End Role="Stops" Type="DataModel.Store.Stops" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Routes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stops">
+        <PropertyRef Name="RouteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehicles_FuelTypes">
+    <End Role="FuelTypes" Type="DataModel.Store.FuelTypes" Multiplicity="0..1" />
+    <End Role="Vehicles" Type="DataModel.Store.Vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FuelTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="FuelTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehicles_MobileDevices">
+    <End Role="MobileDevices" Type="DataModel.Store.MobileDevices" Multiplicity="0..1" />
+    <End Role="Vehicles" Type="DataModel.Store.Vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MobileDevices">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="MobileDeviceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleVehicleSpecialties_Vehicles">
+    <End Role="Vehicles" Type="DataModel.Store.Vehicles" Multiplicity="1" />
+    <End Role="VehicleVehicleSpecialties" Type="DataModel.Store.VehicleVehicleSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleVehicleSpecialties">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleVehicleSpecialties_VehicleSpecialties">
+    <End Role="VehicleSpecialties" Type="DataModel.Store.VehicleSpecialties" Multiplicity="1" />
+    <End Role="VehicleVehicleSpecialties" Type="DataModel.Store.VehicleVehicleSpecialties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleSpecialties">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleVehicleSpecialties">
+        <PropertyRef Name="VehicleSpecialtyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

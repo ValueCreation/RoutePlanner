@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DataModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Barriers">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Barriers)">
+        <MappingFragment StoreEntitySet="Barriers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="Geometry" ColumnName="Geometry" />
+          <ScalarProperty Name="BarrierType" ColumnName="BarrierType" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfigSchemes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.ConfigSchemes)">
+        <MappingFragment StoreEntitySet="ConfigSchemes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drivers">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Drivers)">
+        <MappingFragment StoreEntitySet="Drivers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FixedSalary" ColumnName="FixedSalary" />
+          <ScalarProperty Name="PerHourSalary" ColumnName="PerHourSalary" />
+          <ScalarProperty Name="PerHourOTSalary" ColumnName="PerHourOTSalary" />
+          <ScalarProperty Name="TimeBeforeOT" ColumnName="TimeBeforeOT" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DriverSpecialties">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.DriverSpecialties)">
+        <MappingFragment StoreEntitySet="DriverSpecialties">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FuelTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.FuelTypes)">
+        <MappingFragment StoreEntitySet="FuelTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Co2Emission" ColumnName="Co2Emission" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Locations)">
+        <MappingFragment StoreEntitySet="Locations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="OpenFrom" ColumnName="OpenFrom" />
+          <ScalarProperty Name="OpenTo" ColumnName="OpenTo" />
+          <ScalarProperty Name="OpenFrom2" ColumnName="OpenFrom2" />
+          <ScalarProperty Name="OpenTo2" ColumnName="OpenTo2" />
+          <ScalarProperty Name="FullAddress" ColumnName="FullAddress" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="AddressLine" ColumnName="AddressLine" />
+          <ScalarProperty Name="Locality1" ColumnName="Locality1" />
+          <ScalarProperty Name="Locality2" ColumnName="Locality2" />
+          <ScalarProperty Name="Locality3" ColumnName="Locality3" />
+          <ScalarProperty Name="CountyPrefecture" ColumnName="CountyPrefecture" />
+          <ScalarProperty Name="PostalCode1" ColumnName="PostalCode1" />
+          <ScalarProperty Name="PostalCode2" ColumnName="PostalCode2" />
+          <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="Locator" ColumnName="Locator" />
+          <ScalarProperty Name="CurbApproach" ColumnName="CurbApproach" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileDevices">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.MobileDevices)">
+        <MappingFragment StoreEntitySet="MobileDevices">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ActiveSyncProfileName" ColumnName="ActiveSyncProfileName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="SyncFolder" ColumnName="SyncFolder" />
+          <ScalarProperty Name="SyncType" ColumnName="SyncType" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Orders)">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PlannedDate" ColumnName="PlannedDate" />
+          <ScalarProperty Name="Locator" ColumnName="Locator" />
+          <ScalarProperty Name="FullAddress" ColumnName="FullAddress" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="AddressLine" ColumnName="AddressLine" />
+          <ScalarProperty Name="Locality1" ColumnName="Locality1" />
+          <ScalarProperty Name="Locality2" ColumnName="Locality2" />
+          <ScalarProperty Name="Locality3" ColumnName="Locality3" />
+          <ScalarProperty Name="CountyPrefecture" ColumnName="CountyPrefecture" />
+          <ScalarProperty Name="PostalCode1" ColumnName="PostalCode1" />
+          <ScalarProperty Name="PostalCode2" ColumnName="PostalCode2" />
+          <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+          <ScalarProperty Name="OrderPriority" ColumnName="OrderPriority" />
+          <ScalarProperty Name="ServiceTime" ColumnName="ServiceTime" />
+          <ScalarProperty Name="CurbApproach" ColumnName="CurbApproach" />
+          <ScalarProperty Name="TW1From" ColumnName="TW1From" />
+          <ScalarProperty Name="TW1To" ColumnName="TW1To" />
+          <ScalarProperty Name="TW2From" ColumnName="TW2From" />
+          <ScalarProperty Name="TW2To" ColumnName="TW2To" />
+          <ScalarProperty Name="Capacities" ColumnName="Capacities" />
+          <ScalarProperty Name="CustomProperties" ColumnName="CustomProperties" />
+          <ScalarProperty Name="MaxViolationTime" ColumnName="MaxViolationTime" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Project)">
+        <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Routes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Routes)">
+        <MappingFragment StoreEntitySet="Routes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkFrom" ColumnName="WorkFrom" />
+          <ScalarProperty Name="WorkTo" ColumnName="WorkTo" />
+          <ScalarProperty Name="Breaks" ColumnName="Breaks" />
+          <ScalarProperty Name="TimeAtStart" ColumnName="TimeAtStart" />
+          <ScalarProperty Name="TimeAtEnd" ColumnName="TimeAtEnd" />
+          <ScalarProperty Name="TimeAtRenewal" ColumnName="TimeAtRenewal" />
+          <ScalarProperty Name="MaxOrders" ColumnName="MaxOrders" />
+          <ScalarProperty Name="MaxTravelDistance" ColumnName="MaxTravelDistance" />
+          <ScalarProperty Name="MaxTravelDuration" ColumnName="MaxTravelDuration" />
+          <ScalarProperty Name="MaxTotalDuration" ColumnName="MaxTotalDuration" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="Overtime" ColumnName="Overtime" />
+          <ScalarProperty Name="TotalTime" ColumnName="TotalTime" />
+          <ScalarProperty Name="TotalDistance" ColumnName="TotalDistance" />
+          <ScalarProperty Name="TravelTime" ColumnName="TravelTime" />
+          <ScalarProperty Name="ViolationTime" ColumnName="ViolationTime" />
+          <ScalarProperty Name="WaitTime" ColumnName="WaitTime" />
+          <ScalarProperty Name="Capacities" ColumnName="Capacities" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HardZones" ColumnName="HardZones" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="DefaultRouteID" ColumnName="DefaultRouteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Schedules)">
+        <MappingFragment StoreEntitySet="Schedules">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PlannedDate" ColumnName="PlannedDate" />
+          <ScalarProperty Name="ScheduleType" ColumnName="ScheduleType" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stops">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Stops)">
+        <MappingFragment StoreEntitySet="Stops">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ArriveTime" ColumnName="ArriveTime" />
+          <ScalarProperty Name="Directions" ColumnName="Directions" />
+          <ScalarProperty Name="PathTo" ColumnName="PathTo" />
+          <ScalarProperty Name="Distance" ColumnName="Distance" />
+          <ScalarProperty Name="SequenceNumber" ColumnName="SequenceNumber" />
+          <ScalarProperty Name="OrderSequenceNumber" ColumnName="OrderSequenceNumber" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TimeAtStop" ColumnName="TimeAtStop" />
+          <ScalarProperty Name="TravelTime" ColumnName="TravelTime" />
+          <ScalarProperty Name="WaitTime" ColumnName="WaitTime" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicles">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Vehicles)">
+        <MappingFragment StoreEntitySet="Vehicles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FixedSalary" ColumnName="FixedSalary" />
+          <ScalarProperty Name="FuelConsumption" ColumnName="FuelConsumption" />
+          <ScalarProperty Name="Capacities" ColumnName="Capacities" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleSpecialties">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.VehicleSpecialties)">
+        <MappingFragment StoreEntitySet="VehicleSpecialties">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zones">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Zones)">
+        <MappingFragment StoreEntitySet="Zones">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Geometry" ColumnName="Geometry" />
+          <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_Drivers_MobileDevices" TypeName="DataModel.FK_Drivers_MobileDevices" StoreEntitySet="Drivers">
+      <EndProperty Name="MobileDevices">
+        <ScalarProperty Name="Id" ColumnName="MobileDeviceId" />
+      </EndProperty>
+      <EndProperty Name="Drivers">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="MobileDeviceId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Routes_Drivers" TypeName="DataModel.FK_Routes_Drivers" StoreEntitySet="Routes">
+      <EndProperty Name="Drivers">
+        <ScalarProperty Name="Id" ColumnName="DriversId" />
+      </EndProperty>
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="DriversId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Vehicles_FuelTypes" TypeName="DataModel.FK_Vehicles_FuelTypes" StoreEntitySet="Vehicles">
+      <EndProperty Name="FuelTypes">
+        <ScalarProperty Name="Id" ColumnName="FuelTypeId" />
+      </EndProperty>
+      <EndProperty Name="Vehicles">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="FuelTypeId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Routes_EndLocations" TypeName="DataModel.FK_Routes_EndLocations" StoreEntitySet="Routes">
+      <EndProperty Name="Locations">
+        <ScalarProperty Name="Id" ColumnName="EndLocationId" />
+      </EndProperty>
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="EndLocationId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Routes_StartLocations" TypeName="DataModel.FK_Routes_StartLocations" StoreEntitySet="Routes">
+      <EndProperty Name="Locations">
+        <ScalarProperty Name="Id" ColumnName="StartLocationId" />
+      </EndProperty>
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="StartLocationId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Stops_Locations" TypeName="DataModel.FK_Stops_Locations" StoreEntitySet="Stops">
+      <EndProperty Name="Locations">
+        <ScalarProperty Name="Id" ColumnName="LocationId" />
+      </EndProperty>
+      <EndProperty Name="Stops">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="LocationId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Vehicles_MobileDevices" TypeName="DataModel.FK_Vehicles_MobileDevices" StoreEntitySet="Vehicles">
+      <EndProperty Name="MobileDevices">
+        <ScalarProperty Name="Id" ColumnName="MobileDeviceId" />
+      </EndProperty>
+      <EndProperty Name="Vehicles">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="MobileDeviceId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Stops_Orders" TypeName="DataModel.FK_Stops_Orders" StoreEntitySet="Stops">
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="Id" ColumnName="OrderId" />
+      </EndProperty>
+      <EndProperty Name="Stops">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="OrderId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Routes_Schedules" TypeName="DataModel.FK_Routes_Schedules" StoreEntitySet="Routes">
+      <EndProperty Name="Schedules">
+        <ScalarProperty Name="Id" ColumnName="ScheduleId" />
+      </EndProperty>
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="ScheduleId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Routes_Vehicles" TypeName="DataModel.FK_Routes_Vehicles" StoreEntitySet="Routes">
+      <EndProperty Name="Vehicles">
+        <ScalarProperty Name="Id" ColumnName="VehiclesId" />
+      </EndProperty>
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="VehiclesId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Stops_Routes" TypeName="DataModel.FK_Stops_Routes" StoreEntitySet="Stops">
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="RouteId" />
+      </EndProperty>
+      <EndProperty Name="Stops">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="RouteId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DriverDriverSpecialties" TypeName="DataModel.DriverDriverSpecialties" StoreEntitySet="DriverDriverSpecialties">
+      <EndProperty Name="Drivers">
+        <ScalarProperty Name="Id" ColumnName="DriverId" />
+      </EndProperty>
+      <EndProperty Name="DriverSpecialties">
+        <ScalarProperty Name="Id" ColumnName="DriverSpecialtyId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OrderDriverSpecialties" TypeName="DataModel.OrderDriverSpecialties" StoreEntitySet="OrderDriverSpecialties">
+      <EndProperty Name="DriverSpecialties">
+        <ScalarProperty Name="Id" ColumnName="DriverSpecialtyId" />
+      </EndProperty>
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="Id" ColumnName="OrderId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OrderVehicleSpecialties" TypeName="DataModel.OrderVehicleSpecialties" StoreEntitySet="OrderVehicleSpecialties">
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="Id" ColumnName="OrderId" />
+      </EndProperty>
+      <EndProperty Name="VehicleSpecialties">
+        <ScalarProperty Name="Id" ColumnName="VehicleSpecialtyId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RenewalLocations" TypeName="DataModel.RenewalLocations" StoreEntitySet="RenewalLocations">
+      <EndProperty Name="Locations">
+        <ScalarProperty Name="Id" ColumnName="LocationId" />
+      </EndProperty>
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="RouteId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RouteZones" TypeName="DataModel.RouteZones" StoreEntitySet="RouteZones">
+      <EndProperty Name="Routes">
+        <ScalarProperty Name="Id" ColumnName="RouteId" />
+      </EndProperty>
+      <EndProperty Name="Zones">
+        <ScalarProperty Name="Id" ColumnName="ZoneId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VehicleVehicleSpecialties" TypeName="DataModel.VehicleVehicleSpecialties" StoreEntitySet="VehicleVehicleSpecialties">
+      <EndProperty Name="Vehicles">
+        <ScalarProperty Name="Id" ColumnName="VehicleId" />
+      </EndProperty>
+      <EndProperty Name="VehicleSpecialties">
+        <ScalarProperty Name="Id" ColumnName="VehicleSpecialtyId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
