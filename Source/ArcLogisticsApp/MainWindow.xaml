@@ -154,7 +154,7 @@
                 Width="Auto"
                 VerticalAlignment="Stretch"
                 Margin="20,5,20,-1" BorderBrush="#FF23B80B"/>
-
+            
             <StackPanel Orientation="Horizontal"
                         Margin="{DynamicResource MainWindowActionsButtonsMargin}"
                         Grid.Column="1"
@@ -183,6 +183,7 @@
                        Style="{DynamicResource LinkLabelStyle1}"
                        x:Name="about"/>
             </StackPanel>
+
         </Grid>
 
     </Grid>

@@ -196,19 +196,19 @@
   </tracking>
   <servers>
     <!-- Reference Mapping server, ArcGIS Online is referenced by default -->
-    <server name="server.arcgisonline.com" title="ArcGIS Online mapping" description="The server is used for drawing map layers." help="" authentication="no">
+    <server name="server.arcgisonline.com" title="ArcGIS Online mapping" description="地図レイヤを表示するために使用されます。" help="" authentication="no">
       <url>https://server.arcgisonline.com/arcgis/services</url>
     </server>
     <!-- Reference server where VRP, Route, & potentially traffic services are hosted here -->
-    <server name="ArcGIS.com Routing" tokentype="Arcgis_com" title="ArcGIS Online routing" description="The server is used for routing operations." help="" authentication="yes">
+    <server name="ArcGIS.com Routing" tokentype="Arcgis_com" title="ArcGIS Online routing" description="ルート検索で使用されます。" help="" authentication="yes">
       <url>https://route.arcgis.com/arcgis/services</url>
     </server>
     <!-- Reference server where VRP, Route, & potentially traffic services are hosted here -->
-	<server name="ArcGIS.com Logistics" tokentype="Arcgis_com" title="ArcGIS Online logistics" description="The server is used for logistics operations." help="" authentication="yes">
+	<server name="ArcGIS.com Logistics" tokentype="Arcgis_com" title="ArcGIS Online logistics" description="物流業務で使用されます。" help="" authentication="yes">
       <url>https://logistics.arcgis.com/arcgis/services</url>
     </server>
     <!-- Reference Geocode server here. Note that the server referenced below is an Esri hosted service.  Batch geocoding requires an organizational account and will utilize credits -->
-	<server name="ArcGIS.com Geocoding" tokentype="Arcgis_com" title="ArcGIS Online geocoding" description="The server is used for finding addresses." help="" authentication="yes">
+	<server name="ArcGIS.com Geocoding" tokentype="Arcgis_com" title="ArcGIS Online geocoding" description="住所検索で使用されます。" help="" authentication="yes">
       <url>https://geocode.arcgis.com/arcgis/services</url>
     </server>
     <!--
