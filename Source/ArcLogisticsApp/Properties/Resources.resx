@@ -121,7 +121,7 @@
     <value>すべてのレポートは、正常に保存されました。</value>
   </data>
   <data name="DriverColumnHeader" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
   </data>
   <data name="ImportAliasesPropertyMobileDevice" xml:space="preserve">
     <value>モバイル デバイス</value>
@@ -248,7 +248,7 @@
     <value>インポート プロセスをキャンセルしますか。</value>
   </data>
   <data name="DriverSpecialtiesHeader" xml:space="preserve">
-    <value>ドライバーの特別指定</value>
+    <value>スタッフの特別指定</value>
   </data>
   <data name="EditingInProcessExceptionMessage" xml:space="preserve">
     <value>編集中に選択範囲を変更できません。</value>
@@ -320,7 +320,7 @@
     <value>オーダーを削除できませんでした。彼らはスケジュール '{0}' から割り当て解除することはできません。問題を修正して、もう一度やり直してください。</value>
   </data>
   <data name="ConstraintsCheckerDriverSpecRouteMessageFmt" xml:space="preserve">
-    <value>ドライバー専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}. 特別指定を行方不明: {2}。</value>
+    <value>スタッフ専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}. 特別指定を行方不明: {2}。</value>
   </data>
   <data name="LoginToServerString" xml:space="preserve">
     <value>{0} へのログイン</value>
@@ -431,7 +431,7 @@
     <value>ネットワークでプロキシ サーバーを使用して認証が必要があります。Internet Explorer のプロキシ設定を確認してください。</value>
   </data>
   <data name="VehicleNameColumnHeader" xml:space="preserve">
-    <value>車両名</value>
+    <value>名前</value>
   </data>
   <data name="InvalidStopScheduleExceptionMessage" xml:space="preserve">
     <value>すべての停止は、同じスケジュールに属していなければなりません。</value>
@@ -684,7 +684,7 @@
     <value>訪問先はインポートが、いくつかは見つけられませんでした。</value>
   </data>
   <data name="Drivers" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
   </data>
   <data name="ExportProfileVFileNameInvalid" xml:space="preserve">
     <value>ファイル名は無効です。</value>
@@ -796,7 +796,7 @@
     <value>訪問先</value>
   </data>
   <data name="DriversText" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
   </data>
   <data name="ImportAliasesStartDepot" xml:space="preserve">
     <value>スタート場所、StartLocation、スタート Loc、StartLoc、開始拠点、StartDepot、スタート Dep、StartDep</value>
@@ -871,10 +871,10 @@
     <value>車専門の不一致。車のどれもが訪問先の必要な特別指定: {0}。</value>
   </data>
   <data name="DriverSpecialty" xml:space="preserve">
-    <value>ドライバー専門</value>
+    <value>スタッフ専門</value>
   </data>
   <data name="ImportDrivers" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
   </data>
   <data name="CommentColumnHeader" xml:space="preserve">
     <value>コメント</value>
@@ -909,7 +909,7 @@
     <value>順序:</value>
   </data>
   <data name="RoutesGridCaptionDriver" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
   </data>
   <data name="UnreachableViolationMessage" xml:space="preserve">
     <value>それに到達する方法がないので、訪問先: {0} はルーティングできません。</value>
@@ -1121,7 +1121,7 @@
     <comment>Import field aliases. Must be separated by ','.</comment>
   </data>
   <data name="DriverSpecialties" xml:space="preserve">
-    <value>ドライバーの特別指定</value>
+    <value>スタッフの特別指定</value>
   </data>
   <data name="UnassignOrdersCommandEnabledTooltip" xml:space="preserve">
     <value>選択された訪問先のすべての割り当てを解除します。</value>
@@ -1152,7 +1152,7 @@
     <value>休憩</value>
   </data>
   <data name="ImportAliasesDriver" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
     <comment>Import field aliases. Must be separated by ','.</comment>
   </data>
   <data name="Project" xml:space="preserve">
@@ -1212,7 +1212,7 @@
     <comment>Import field aliases. Must be separated by ','.</comment>
   </data>
   <data name="NameValidationRuleDriverSpecialtyText" xml:space="preserve">
-    <value>ドライバー専門、同じ名前が既に存在します。</value>
+    <value>スタッフ専門、同じ名前が既に存在します。</value>
   </data>
   <data name="BarrierByPolygonTooltipText" xml:space="preserve">
     <value>壁を作成します。</value>
@@ -1364,7 +1364,7 @@
     <value>レポート</value>
   </data>
   <data name="Driver" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
   </data>
   <data name="ImportAliasesPropertyX" xml:space="preserve">
     <value>X</value>
@@ -1401,7 +1401,7 @@
     <value>オーダー シンボル:</value>
   </data>
   <data name="DriverSpecialitiesListViolationMessage" xml:space="preserve">
-    <value>ドライバー専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を必要はありません: {1}。</value>
+    <value>スタッフ専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を必要はありません: {1}。</value>
   </data>
   <data name="InitializingApplicationStatus" xml:space="preserve">
     <value>初期化しています.</value>
@@ -1592,7 +1592,7 @@
     <value>削除依頼します。</value>
   </data>
   <data name="DriversPageCaption" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
   </data>
   <data name="DurationColumnHeader" xml:space="preserve">
     <value>期間</value>
@@ -1613,7 +1613,7 @@
     <value>日</value>
   </data>
   <data name="DriverNameHeader" xml:space="preserve">
-    <value>ドライバー名</value>
+    <value>スタッフ名</value>
   </data>
   <data name="SwitchUserButtonString" xml:space="preserve">
     <value>切り替え</value>
@@ -1818,7 +1818,7 @@
     <value>最小値未満の最大値。</value>
   </data>
   <data name="DriversPagePrintHeader" xml:space="preserve">
-    <value>ドライバーの一覧</value>
+    <value>スタッフの一覧</value>
   </data>
   <data name="ReportsPageLabelStep2" xml:space="preserve">
     <value>プレビュー/印刷/レポートを保存</value>
@@ -1920,7 +1920,7 @@
     <value>OLE DB プロバイダー (データベース)</value>
   </data>
   <data name="DriverAssignedToFutureRoute" xml:space="preserve">
-    <value>ドライバー '{0}' は、今日または将来の日付の 1 つ以上のルートに割り当てられます。割り当てを解除して削除する前に、またはそれらのルートは無効になります。</value>
+    <value>スタッフ '{0}' は、今日または将来の日付の 1 つ以上のルートに割り当てられます。割り当てを解除して削除する前に、またはそれらのルートは無効になります。</value>
   </data>
   <data name="ManuallyEditedXYFarFromNearestRoad" xml:space="preserve">
     <value>X を編集/最寄りの道路から遠い Y</value>
@@ -2012,7 +2012,7 @@
     <value>駅表</value>
   </data>
   <data name="DriverSpecialtiesColumnHeader" xml:space="preserve">
-    <value>ドライバーの特別指定</value>
+    <value>スタッフの特別指定</value>
   </data>
   <data name="ImportAliasesPropertyTimeAtEnd" xml:space="preserve">
     <value>終わりの時間</value>
@@ -2705,7 +2705,7 @@
     <value>結果:</value>
   </data>
   <data name="ImportAliasesPropertyDriverSpecialties" xml:space="preserve">
-    <value>ドライバーの特別指定</value>
+    <value>スタッフの特別指定</value>
     <comment>Import field aliases. Must be separated by ','.</comment>
   </data>
   <data name="ConstraintsCheckerVehicleSpecRoutesMessageFmt" xml:space="preserve">
@@ -2863,7 +2863,7 @@
     <value>訪問先</value>
   </data>
   <data name="DriverSpecialtyColumnHeader" xml:space="preserve">
-    <value>ドライバー専門</value>
+    <value>スタッフ専門</value>
   </data>
   <data name="CurbApproachFormat" xml:space="preserve">
     <value>{0} 側</value>
@@ -2896,7 +2896,7 @@
     <value>すべてのルートは、スケジュールを割り当てる必要があります。</value>
   </data>
   <data name="DriverAssignedToDefaultRoute" xml:space="preserve">
-    <value>ドライバー '{0}' は、1 つまたは複数のデフォルト ルートに割り当てられます。割り当てを解除して削除する前に、これらの既定のルートが無効になります。</value>
+    <value>スタッフ '{0}' は、1 つまたは複数のデフォルト ルートに割り当てられます。割り当てを解除して削除する前に、これらの既定のルートが無効になります。</value>
   </data>
   <data name="ManageProjectsCommandTitle" xml:space="preserve">
     <value>プロジェクトを管理します。</value>
@@ -3122,7 +3122,7 @@
     <value>選択したルートから選択した日のすべての訪問先の割り当てを解除します。選択した日のためにすべてのルートのすべての訪問先を割り当てられないでしょうルートは一覧表示のドロップ ダウン メニューで選択されている場合</value>
   </data>
   <data name="ImportDriverSpecialties" xml:space="preserve">
-    <value>ドライバーの特別指定</value>
+    <value>スタッフの特別指定</value>
   </data>
   <data name="VehiclesGridFuelTypeCaption" xml:space="preserve">
     <value>燃料の種類</value>
@@ -3308,7 +3308,7 @@
     <value>ルート: {0} 実行不可能な順序の事前割り当てがあります。か、訪問先時間ウィンドウまたはウィンドウまたは休憩のタイム ウィンドウを満たすことができない拠点時間の開始/終了。</value>
   </data>
   <data name="ImportAliasesPropertyDriver" xml:space="preserve">
-    <value>ドライバー</value>
+    <value>スタッフ</value>
     <comment>Import field aliases. Must be separated by ','.</comment>
   </data>
   <data name="OrderIsNotGeocodedFormat" xml:space="preserve">
@@ -3750,10 +3750,10 @@
     <value>カテゴリが存在しません。</value>
   </data>
   <data name="DriverSpecialitiesAnyViolationMessage" xml:space="preserve">
-    <value>ドライバー専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}。</value>
+    <value>スタッフ専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}。</value>
   </data>
   <data name="ManageDriversCommandTitle" xml:space="preserve">
-    <value>ドライバーを管理します。</value>
+    <value>スタッフを管理します。</value>
   </data>
   <data name="ImportAliasesMaxTimeOnVehicle" xml:space="preserve">
     <value>MaxTimeOnVehicle、マックス。車の Vehicle,MaxTimeVeh,Max.Time の時間</value>
@@ -3963,7 +3963,7 @@
     <value>説明</value>
   </data>
   <data name="DriverSpecialitiesSingleViolationMessage" xml:space="preserve">
-    <value>ドライバー専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}。</value>
+    <value>スタッフ専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}。</value>
   </data>
   <data name="ProjectsString" xml:space="preserve">
     <value>プロジェクト:</value>
@@ -3972,7 +3972,7 @@
     <value>エクスポート</value>
   </data>
   <data name="ConstraintsCheckerDriverSpecRoutesMessageFmt" xml:space="preserve">
-    <value>ドライバー専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}. 特別指定がありません: {1}。</value>
+    <value>スタッフ専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}. 特別指定がありません: {1}。</value>
   </data>
   <data name="ViolationOrderStringFormat" xml:space="preserve">
     <value>'{0}' の順序</value>
@@ -3982,7 +3982,7 @@
     <comment>Import field aliases. Must be separated by ','.</comment>
   </data>
   <data name="DriverSpecialtiesPagePrintHeader" xml:space="preserve">
-    <value>ドライバー特別指定テーブル</value>
+    <value>スタッフ特別指定テーブル</value>
   </data>
   <data name="DriversNameCaption" xml:space="preserve">
     <value>名</value>

@@ -1624,7 +1624,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}. 特別指定を行方不明: {2}。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}. 特別指定を行方不明: {2}。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ConstraintsCheckerDriverSpecRouteMessageFmt {
             get {
@@ -1633,7 +1633,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}. 特別指定がありません: {1}。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}. 特別指定がありません: {1}。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ConstraintsCheckerDriverSpecRoutesMessageFmt {
             get {
@@ -2317,7 +2317,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Driver {
             get {
@@ -2326,7 +2326,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー &apos;{0}&apos; は、1 つまたは複数のデフォルト ルートに割り当てられます。割り当てを解除して削除する前に、これらの既定のルートが無効になります。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ &apos;{0}&apos; は、1 つまたは複数のデフォルト ルートに割り当てられます。割り当てを解除して削除する前に、これらの既定のルートが無効になります。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverAssignedToDefaultRoute {
             get {
@@ -2335,7 +2335,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー &apos;{0}&apos; は、今日または将来の日付の 1 つ以上のルートに割り当てられます。割り当てを解除して削除する前に、またはそれらのルートは無効になります。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ &apos;{0}&apos; は、今日または将来の日付の 1 つ以上のルートに割り当てられます。割り当てを解除して削除する前に、またはそれらのルートは無効になります。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverAssignedToFutureRoute {
             get {
@@ -2344,7 +2344,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverColumnHeader {
             get {
@@ -2353,7 +2353,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー名 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ名 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverNameHeader {
             get {
@@ -2362,7 +2362,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Drivers {
             get {
@@ -2398,7 +2398,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriversPageCaption {
             get {
@@ -2416,7 +2416,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバーの一覧 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフの一覧 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriversPagePrintHeader {
             get {
@@ -2425,7 +2425,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門の不一致。ドライバーのどれもが訪問先の必要な特別指定: {0}。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialitiesAnyViolationMessage {
             get {
@@ -2434,7 +2434,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を必要はありません: {1}。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を必要はありません: {1}。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialitiesListViolationMessage {
             get {
@@ -2452,7 +2452,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門の不一致。ドライバー: {0} は、訪問先の必要な特別指定を持っていません: {1}。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialitiesSingleViolationMessage {
             get {
@@ -2461,7 +2461,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバーの特別指定 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフの特別指定 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialties {
             get {
@@ -2470,7 +2470,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバーの特別指定 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフの特別指定 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialtiesColumnHeader {
             get {
@@ -2479,7 +2479,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバーの特別指定 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフの特別指定 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialtiesHeader {
             get {
@@ -2497,7 +2497,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー特別指定テーブル に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ特別指定テーブル に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialtiesPagePrintHeader {
             get {
@@ -2515,7 +2515,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialty {
             get {
@@ -2524,7 +2524,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriverSpecialtyColumnHeader {
             get {
@@ -2578,7 +2578,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DriversText {
             get {
@@ -4204,7 +4204,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ImportAliasesDriver {
             get {
@@ -4438,7 +4438,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ImportAliasesPropertyDriver {
             get {
@@ -4447,7 +4447,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバーの特別指定 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフの特別指定 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ImportAliasesPropertyDriverSpecialties {
             get {
@@ -5113,7 +5113,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ImportDrivers {
             get {
@@ -5131,7 +5131,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバーの特別指定 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフの特別指定 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ImportDriverSpecialties {
             get {
@@ -6528,7 +6528,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバーを管理します。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフを管理します。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ManageDriversCommandTitle {
             get {
@@ -7437,7 +7437,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー専門、同じ名前が既に存在します。 に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ専門、同じ名前が既に存在します。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string NameValidationRuleDriverSpecialtyText {
             get {
@@ -9291,7 +9291,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   ドライバー に類似しているローカライズされた文字列を検索します。
+        ///   スタッフ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string RoutesGridCaptionDriver {
             get {
@@ -11181,7 +11181,7 @@ namespace ESRI.ArcLogistics.App.Properties {
         }
         
         /// <summary>
-        ///   車両名 に類似しているローカライズされた文字列を検索します。
+        ///   名前 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string VehicleNameColumnHeader {
             get {

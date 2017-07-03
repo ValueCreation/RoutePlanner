@@ -11,19 +11,27 @@
         <ALPage type="ESRI.ArcLogistics.App.Pages.DriversPage"/>
         <ALPage type="ESRI.ArcLogistics.App.Pages.BreaksPage"/>
         <ALPage type="ESRI.ArcLogistics.App.Pages.DefaultRoutesPage"/>
-        <ALPage type="ESRI.ArcLogistics.App.Pages.FuelPage"/>
+        <!--
+        <ALPage type="ESRI.ArcLogistics.App.Pages.FuelPage"/>  
         <ALPage type="ESRI.ArcLogistics.App.Pages.MobileDevicesPage"/>
+        -->
+      
         <ALPage type="ESRI.ArcLogistics.App.Pages.SpecialtiesPage"/>
+      
+        <!--
         <ALPage type="ESRI.ArcLogistics.App.Pages.ZonesPage"/>
         <ALPage type="ESRI.ArcLogistics.App.Pages.BarriersPage"/>
+        -->
     </ALCategory>
     <ALCategory name="Schedule" captionID="ScheduleCategoryCaption" type="ESRI.ArcLogistics.App.PageCategories.ScheduleCategory">
        <ALPage type="ESRI.ArcLogistics.App.Pages.OptimizeAndEditPage"/>
     </ALCategory>
+    <!--
     <ALCategory name="Deployment" captionID="DeploymentCategoryCaption" type="ESRI.ArcLogistics.App.PageCategories.DeploymentCategory">
         <ALPage type="ESRI.ArcLogistics.App.Pages.ReportsPage"/>
         <ALPage type="ESRI.ArcLogistics.App.Pages.ExportPage"/>
     </ALCategory>
+    -->
     <ALCategory name="Preferences" captionID="PreferencesCategoryCaption" type="ESRI.ArcLogistics.App.PageCategories.PreferencesCategory" visible="false">
         <ALPage type="ESRI.ArcLogistics.App.Pages.GeneralPreferencesPage"/>
         <ALPage type="ESRI.ArcLogistics.App.Pages.MapDisplayPreferencesPage"/>
